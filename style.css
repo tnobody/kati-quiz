@@ -1,0 +1,45 @@
+html, body {
+  background: #fdff75;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#date {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+blockquote {
+  font-size: 3rem;
+  text-align: center;
+}
+
+blockquote::before, blockquote::after {
+  color: gray;
+  
+}
+
+blockquote::before {
+  /* \0000a0 */
+  content: '\201C';
+}
+
+blockquote::after {
+  content: '\201D';
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
